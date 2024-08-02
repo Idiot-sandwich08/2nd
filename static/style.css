@@ -1,0 +1,150 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+nav a {
+    background: #fff;
+    color: #3498db;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1; /* Allows container to expand and push footer down */
+}
+
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 1rem);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #27ae60;
+}
+
+/* Style for smaller delete button with no border, aligned to the side */
+button.delete-button {
+    background: #e74c3c;
+    color: #fff;
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    margin-left: 1rem; /* Space between the button and text */
+    font-size: 0.75rem;
+    border-radius: 5px; /* Optional: keeps it rounded */
+    height: 24px; /* Adjust height to fit content */
+    width: 24px; /* Adjust width to fit content */
+    line-height: 24px; /* Centers text vertically */
+    text-align: center; /* Centers text horizontally */
+    cursor: pointer; /* Pointer cursor to indicate clickability */
+}
+
+button.delete-button:hover {
+    background: #c0392b;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and button */
+}
+
+li strong {
+    color: #2ecc71;
+}
+
+.footer {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+

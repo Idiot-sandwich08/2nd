@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Submissions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Music Gig Finder</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('submit') }}">Submit Profile</a>
+        <a href="{{ url_for('view_submissions') }}">View Submissions</a>
+    </nav>
+    <div class="container">
+        <h2>Submitted Profiles</h2>
+        <ul>
+            {% for submission in submissions %}
+            <li>
+                <div>
+                    <strong>Name:</strong> {{ submission.name }}<br>
+                    <strong>Email:</strong> {{ submission.email }}<br>
+                    <strong>Type of Gig:</strong> {{ submission.gig }}<br>
+                    <strong>Description:</strong> {{ submission.description }}
+                </div>
+                <form action="{{ url_for('delete', index=loop.index0) }}" method="post" style="display: inline;">
+                    <button type="submit" class="delete-button">X</button>
+                </form>
+            </li>
+            {% else %}
+            <li>No submissions yet.</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Music Gig Finder. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

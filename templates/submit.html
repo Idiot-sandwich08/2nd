@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Music Gig Finder</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('submit') }}">Submit Profile</a>
+        <a href="{{ url_for('view_submissions') }}">View Submissions</a>
+    </nav>
+    <div class="container">
+        <h2>Submit Your Profile</h2>
+        <form action="{{ url_for('submit') }}" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="gig">Type of Gig:</label>
+            <input type="text" id="gig" name="gig" required>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Music Gig Finder. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+

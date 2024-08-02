@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Music Gig Finder</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('submit') }}">Submit Profile</a>
+        <a href="{{ url_for('view_submissions') }}">View Submissions</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Music Gig Finder!</h2>
+        <p>Find and apply for music gigs and opportunities. Use the links above to submit your profile or view your submissions.</p>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Music Gig Finder. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
