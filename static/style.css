@@ -50,7 +50,7 @@ nav a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    flex: 1; /* Allows container to expand and push footer down */
+    flex: 1; 
 }
 
 form {
@@ -98,20 +98,20 @@ button:hover {
     background: #27ae60;
 }
 
-/* Style for smaller delete button with no border, aligned to the side */
+
 button.delete-button {
     background: #e74c3c;
     color: #fff;
-    border: none; /* Remove border */
-    padding: 0; /* Remove padding */
-    margin-left: 1rem; /* Space between the button and text */
+    border: none; 
+    padding: 0; 
+    margin-left: 1rem; 
     font-size: 0.75rem;
-    border-radius: 5px; /* Optional: keeps it rounded */
-    height: 24px; /* Adjust height to fit content */
-    width: 24px; /* Adjust width to fit content */
-    line-height: 24px; /* Centers text vertically */
-    text-align: center; /* Centers text horizontally */
-    cursor: pointer; /* Pointer cursor to indicate clickability */
+    border-radius: 5px; 
+    height: 24px; 
+    width: 24px;
+    line-height: 24px;
+    text-align: center; 
+    cursor: pointer; 
 }
 
 button.delete-button:hover {
@@ -129,9 +129,9 @@ li {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex; /* Align items horizontally */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between text and button */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 li strong {
